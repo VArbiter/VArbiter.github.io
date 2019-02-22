@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.4.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.4.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.4.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.4.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="MQExtensionKitSome custom categories for iOS with Objective-C.   Current Version 4.0.0 pod ‘MQExtensionKit’ , ‘~&amp;gt; 4.0.0’ // default is MQCore  pod ‘MQExtensionKit/MQFull’ , ‘~&amp;gt; 4.0.0’ . if you w">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MQExtensionKit Docs (English)">
+<meta property="og:url" content="http://yoursite.com/2018/12/27/MQExtensionKit_README/index.html">
+<meta property="og:site_name" content="Elwin Frederick">
+<meta property="og:description" content="MQExtensionKitSome custom categories for iOS with Objective-C.   Current Version 4.0.0 pod ‘MQExtensionKit’ , ‘~&amp;gt; 4.0.0’ // default is MQCore  pod ‘MQExtensionKit/MQFull’ , ‘~&amp;gt; 4.0.0’ . if you w">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://img.shields.io/cocoapods/v/MQExtensionKit.svg?style=flat">
+<meta property="og:image" content="https://img.shields.io/cocoapods/l/MQExtensionKit.svg?style=flat">
+<meta property="og:image" content="https://img.shields.io/cocoapods/p/MQExtensionKit.svg?style=flat">
+<meta property="og:updated_time" content="2019-02-22T06:09:18.751Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MQExtensionKit Docs (English)">
+<meta name="twitter:description" content="MQExtensionKitSome custom categories for iOS with Objective-C.   Current Version 4.0.0 pod ‘MQExtensionKit’ , ‘~&amp;gt; 4.0.0’ // default is MQCore  pod ‘MQExtensionKit/MQFull’ , ‘~&amp;gt; 4.0.0’ . if you w">
+<meta name="twitter:image" content="https://img.shields.io/cocoapods/v/MQExtensionKit.svg?style=flat">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/12/27/MQExtensionKit_README/">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>MQExtensionKit Docs (English) | Elwin Frederick</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Elwin Frederick</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/27/MQExtensionKit_README/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="冯明庆">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Elwin Frederick">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">MQExtensionKit Docs (English)
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-12-27 10:54:53" itemprop="dateCreated datePublished" datetime="2018-12-27T10:54:53+08:00">2018-12-27</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-02-22 14:09:18" itemprop="dateModified" datetime="2019-02-22T14:09:18+08:00">2019-02-22</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Geek/" itemprop="url" rel="index"><span itemprop="name">Geek</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="MQExtensionKit"><a href="#MQExtensionKit" class="headerlink" title="MQExtensionKit"></a>MQExtensionKit</h1><h5 id="Some-custom-categories-for-iOS-with-Objective-C"><a href="#Some-custom-categories-for-iOS-with-Objective-C" class="headerlink" title="Some custom categories for iOS with Objective-C."></a>Some custom categories for iOS with Objective-C.</h5><p><a href="http://cocoapods.org/pods/MQExtensionKit" target="_blank" rel="noopener"><img src="https://img.shields.io/cocoapods/v/MQExtensionKit.svg?style=flat" alt="Version"></a></p>
+<p><a href="http://cocoapods.org/pods/MQExtensionKit" target="_blank" rel="noopener"><img src="https://img.shields.io/cocoapods/l/MQExtensionKit.svg?style=flat" alt="License"></a></p>
+<p><a href="http://cocoapods.org/pods/MQExtensionKit" target="_blank" rel="noopener"><img src="https://img.shields.io/cocoapods/p/MQExtensionKit.svg?style=flat" alt="Platform"></a></p>
+<h3 id="Current-Version-4-0-0"><a href="#Current-Version-4-0-0" class="headerlink" title="Current Version 4.0.0"></a>Current Version 4.0.0</h3><blockquote>
+<p>pod ‘MQExtensionKit’ , ‘~&gt; 4.0.0’ // default is MQCore</p>
+<blockquote>
+<p>pod ‘MQExtensionKit/MQFull’ , ‘~&gt; 4.0.0’ . if you wanna install the whole Kit .</p>
+</blockquote>
+</blockquote>
+<h3 id="Warning"><a href="#Warning" class="headerlink" title="Warning"></a>Warning</h3><blockquote>
+<p>CCExtensionKit has no longer effect after version <code>3.7.0</code></p>
+<p>cause after <code>3.7.0</code> , CCExtensionKit was renamed to <code>&#39;MQExtensionKit&#39;</code> .</p>
+<p>CCLocalLib has no longer effect after version <code>2.2.3</code></p>
+<p>cause after <code>3.0.0</code> , CCLocalLib was renamed to <code>&#39;CCExtensionKit&#39;</code> .</p>
+<p>MQExtensionKit had import the <code>AdSupport.framework</code>.</p>
+<p>therefore , be ware when submit your app to App Store .</p>
+</blockquote>
+<h3 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h3><blockquote>
+<p>when install , default is <code>MQCore</code> , <code>MQCore</code> contains </p>
+<blockquote>
+<p><code>MQCommon</code> (Macros) , <code>MQProtocol</code> (Protocol) , <code>MQData</code> (NS Family), <code>MQView</code> (UI Family) .</p>
+</blockquote>
+<p>when you wanna get to Full , install with <code>&quot;MQExtensionKit/MQFull&quot;</code> . (MQFull contains <code>MQCore</code> , <code>MQRouter</code> , <code>MQOrigin</code>)</p>
+</blockquote>
+<p><strong>Instructions</strong></p>
+<blockquote>
+<blockquote>
+<p>MQCore : Core extensions . a abstract collection .</p>
+</blockquote>
+<blockquote>
+<p>MQFull : Full extensions (contains MQCore , MQRouter , MQOrigin) . an abstract collection .</p>
+</blockquote>
+<blockquote>
+<p>MQCommon : Macros &amp;&amp; Common tools .</p>
+</blockquote>
+<blockquote>
+<p>MQProtocol : MQProtocol . for MQ . make all the sub-class of NSObject conforms to it .</p>
+</blockquote>
+<blockquote>
+<p>MQData :  a extension actions for NS family .</p>
+</blockquote>
+<blockquote>
+<p>MQView :  a extension actions for UI family .</p>
+</blockquote>
+<blockquote>
+<p>MQOrigin : a kit that for develop for custom views / medias / datas .</p>
+</blockquote>
+<blockquote>
+<p>MQRouter : a router for module developing . and “wrapper” was depended on <a href="https://github.com/meili/MGJRouter" target="_blank" rel="noopener"><code>MGJRouter</code></a> (‘~&gt; 0.9.3’)  .</p>
+</blockquote>
+<blockquote>
+<p>MQMedia : Media operate . video , audio , images , etc …</p>
+</blockquote>
+<blockquote>
+<p>MQDataBase : Wrappers for <a href="https://github.com/realm/realm-cocoa" target="_blank" rel="noopener"><code>Realm</code></a> (‘~&gt; 2.10.2’) &amp;&amp; <a href="https://github.com/marcoarment/FCModel" target="_blank" rel="noopener"><code>FCModel</code></a></p>
+</blockquote>
+<blockquote>
+<p>MQCustom :  Custom classes or functions , dependend or based on other vendors .</p>
+</blockquote>
+</blockquote>
+<h3 id="What’s-new"><a href="#What’s-new" class="headerlink" title="What’s new ?"></a>What’s new ?</h3><hr>
+<hr>
+<p><strong>2019-02-22 14:01:38</strong></p>
+<blockquote>
+<p>added  <code>MQVideo_H264_HEVC_Encoder</code> &amp;&amp; <code>MQVideo_H264_HEVC_Decoder</code> (MQMedia) for video hardware encode &amp;&amp; hardware decode  .</p>
+</blockquote>
+<p><strong>2018-12-26 14:44:04</strong></p>
+<blockquote>
+<p>added  <code>MQRouter</code> (MQRouter) .</p>
+</blockquote>
+<p><strong>2018-08-13 16:22:06</strong></p>
+<blockquote>
+<p>added  <code>NSError+MQExtension</code> (MQData) .</p>
+</blockquote>
+<p><strong>2018-08-02 14:04:53</strong></p>
+<blockquote>
+<p>added <code>MQMultiArgumentPerformer</code> (MQOrigin) for perfoming a selector with multi arguments .</p>
+</blockquote>
+<p><strong>2018-08-02 11:03:05</strong></p>
+<blockquote>
+<p>added  <code>SVProgressHUD+MQExtension</code> (MQCustom) for notification issues.</p>
+</blockquote>
+<p><strong>2018-07-30 12:52:51</strong></p>
+<blockquote>
+<p>using new prefix  <code>MQ</code> .</p>
+</blockquote>
+<p><strong>2018-07-09 17:37:21</strong></p>
+<blockquote>
+<p>added <code>NSLock+MQExtension</code> (MQData) for lock issues .</p>
+<p>added <code>MQNull</code> (MQOrigin) for replace NSNull holding issues .</p>
+</blockquote>
+<p><strong>2018-06-27 20:03:04</strong></p>
+<blockquote>
+<p>added <code>MQPointMarker</code> (MQOrigin) for collect infos on our own ,</p>
+<p>added <code>MQCrashCatcher</code> (MQOrigin) for catch crashes , </p>
+<p>added <code>MQPhotoManager</code> (MQOrigin) for pick photos / videos in album ,</p>
+<p>added <code>MQAudioRecorder</code> (MQOrigin) for recording audios .</p>
+</blockquote>
+<p><strong>2018-06-25 19:22:00</strong></p>
+<blockquote>
+<p>added <code>MQTaskManager</code> (MQOrigin) for easy queue tasks .</p>
+</blockquote>
+<p><strong>2018-05-04 21:55:33</strong></p>
+<blockquote>
+<p>added <code>MQAuthentication</code> (MQCommon) for touch id &amp;&amp; face id verify , <code>MQIAPManager</code>(MQOrigin) for in app purchase  .</p>
+</blockquote>
+<p><strong>2018-04-23 18:53:35</strong></p>
+<blockquote>
+<p>make prefix all <code>mq_</code> . remove MQDataBase &amp;&amp; MQCustom from MQFull .</p>
+</blockquote>
+<p><strong>2017-12-22 15:59:44</strong></p>
+<blockquote>
+<p>translate all comment in header file into chinese .</p>
+</blockquote>
+<p><strong>2017-11-28 12:39:59</strong></p>
+<blockquote>
+<p>rebuilt <code>MQBridgeWrapper</code> in <code>MQRouter</code> .</p>
+</blockquote>
+<p><strong>2017-11-01 19:24:27</strong></p>
+<blockquote>
+<p>fix annoying warnings under Xcode 9.</p>
+</blockquote>
+<p><strong>2017-09-15 17:56:19</strong></p>
+<blockquote>
+<p>rename ‘CCLocalLib’ to ‘CCExtensionKit’ .<br>updated to ‘3.0.0’</p>
+</blockquote>
+<p><strong>2017-08-10 14:50:52</strong></p>
+<blockquote>
+<p>After writing <code>CCChainOperate</code> for almost a month , I figured , that , <strong>THIS CAN BE A KIT !</strong></p>
+<p>Therefore , <code>CCChainKit</code> was created . 👏👏👏 .</p>
+<p><del>👉👉👉 <strong><a href="https://github.com/VArbiter/CCChainKit" target="_blank" rel="noopener">CCChainKit</a></strong></del><br>probably I won’t update CCChainKit for a long time , I don’t have that time or energy to continue contribute on two repos .</p>
+</blockquote>
+<p><strong>2017-08-06 15:38:09</strong></p>
+<blockquote>
+<p>Well … I found that local libraries have some issues on spec dependency . Therefore , CCLocalLib was no longer a local lib.<br>👏👏👏 -&gt; now , jusy run <code>pod &#39;LocalLib&#39;</code> and cocoapods will do the rest .</p>
+</blockquote>
+<p><strong>2017-07-01 19:49:01</strong></p>
+<blockquote>
+<p>I wrote a new library called <code>CCChainOperate</code> .<br> Why I wrote it ?</p>
+<p>well , after years of writing objective-c , i figured some dis-advantage of it . such as you have to use <code>[]</code>  everywhere . i just hate that . </p>
+<p>but , as we all know , on the opposite side , <code>swift</code> was much better , easily to use , simple to unsderstand (though its haven’t stable yet). </p>
+<p> Someday , i find , that block , can actually can perform a style like swift , therefore <code>CCChainOperate</code> was born (not complete yet , maybe , forever , but I’ll try.).</p>
+<p> Also , heavily inspired by react-Objc .</p>
+</blockquote>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>To run the example project, clone the repo, and run <code>pod install</code> from the Example directory first.</p>
+<h3 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h3><p>Already done in pod spec.</p>
+<h3 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h3><p>MQExtensionKit is available through <a href="http://cocoapods.org" target="_blank" rel="noopener">CocoaPods</a>. To install<br>it, simply add the following line to your Podfile:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pod <span class="string">"MQExtensionKit"</span></span><br></pre></td></tr></table></figure>
+<h3 id="Author"><a href="#Author" class="headerlink" title="Author"></a>Author</h3><p><strong>ElwinFrederick, <a href="mailto:elwinfrederick@163.com" target="_blank" rel="noopener">elwinfrederick@163.com</a></strong></p>
+<h3 id="License"><a href="#License" class="headerlink" title="License"></a>License</h3><p>MQExtensionKit is available under the MIT license. See the LICENSE file for more info.</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/27/MQExtensionKit_README_CN/" rel="prev" title="MQExtensionKit 中文文档">
+                MQExtensionKit 中文文档 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">冯明庆</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">categories</span>
+                  
+                </div>
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MQExtensionKit"><span class="nav-number">1.</span> <span class="nav-text">MQExtensionKit</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Some-custom-categories-for-iOS-with-Objective-C"><span class="nav-number">1.0.0.0.1.</span> <span class="nav-text">Some custom categories for iOS with Objective-C.</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#Current-Version-4-0-0"><span class="nav-number">1.0.1.</span> <span class="nav-text">Current Version 4.0.0</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Warning"><span class="nav-number">1.0.2.</span> <span class="nav-text">Warning</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Note"><span class="nav-number">1.0.3.</span> <span class="nav-text">Note</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#What’s-new"><span class="nav-number">1.0.4.</span> <span class="nav-text">What’s new ?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Example"><span class="nav-number">1.0.5.</span> <span class="nav-text">Example</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Requirements"><span class="nav-number">1.0.6.</span> <span class="nav-text">Requirements</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Installation"><span class="nav-number">1.0.7.</span> <span class="nav-text">Installation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Author"><span class="nav-number">1.0.8.</span> <span class="nav-text">Author</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#License"><span class="nav-number">1.0.9.</span> <span class="nav-text">License</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">冯明庆</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Muse</a> v6.4.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
