@@ -323,7 +323,7 @@
                 
               
 
-              <time title="Created: 2019-02-22 14:12:59 / Modified: 14:16:35" itemprop="dateCreated datePublished" datetime="2019-02-22T14:12:59+08:00">2019-02-22</time>
+              <time title="Created: 2019-02-22 14:12:59 / Modified: 14:22:55" itemprop="dateCreated datePublished" datetime="2019-02-22T14:12:59+08:00">2019-02-22</time>
             
 
             
@@ -564,7 +564,7 @@
                 
               
 
-              <time title="Created: 2019-02-22 14:12:59 / Modified: 14:16:55" itemprop="dateCreated datePublished" datetime="2019-02-22T14:12:59+08:00">2019-02-22</time>
+              <time title="Created: 2019-02-22 14:12:59 / Modified: 14:22:54" itemprop="dateCreated datePublished" datetime="2019-02-22T14:12:59+08:00">2019-02-22</time>
             
 
             
@@ -1142,7 +1142,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-22 14:20:13" itemprop="dateModified" datetime="2019-02-22T14:20:13+08:00">2019-02-22</time>
+                <time title="Modified: 2019-03-07 16:07:11" itemprop="dateModified" datetime="2019-03-07T16:07:11+08:00">2019-03-07</time>
               
             
           </span>
@@ -1213,7 +1213,7 @@
 <p>所以 , 当你提交应用到 App Store 的时候要注意 .</p>
 </blockquote>
 <h3 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h3><blockquote>
-<p>安装的时候 , 默认是 <code>MQCore</code> , <code>MQCore</code> 包含了 </p>
+<p>安装的时候 , 默认是 <code>MQCore</code> , <code>MQCore</code> 包含了</p>
 <blockquote>
 <p><code>MQCommon</code> (宏) , <code>MQProtocol</code> (协议) , <code>MQData</code> (NS族群), <code>MQView</code> (UI 族群), <code>MQRuntime</code> (objc/ runtime 相关)</p>
 </blockquote>
@@ -1249,12 +1249,13 @@
 <p>MQMedia : 多媒体操作 . 视频 , 音频 , 图像 , 等等 …</p>
 </blockquote>
 <blockquote>
-<p>MQDataBase :  <a href="https://github.com/realm/realm-cocoa" target="_blank" rel="noopener"><code>Realm</code></a> (‘~&gt; 2.10.2’)  &amp;&amp; &amp;&amp; <a href="https://github.com/marcoarment/FCModel" target="_blank" rel="noopener"><code>FCModel</code></a> 的包裹 . </p>
+<p>MQDataBase :  <a href="https://github.com/realm/realm-cocoa" target="_blank" rel="noopener"><code>Realm</code></a> (‘~&gt; 2.10.2’)  &amp;&amp; &amp;&amp; <a href="https://github.com/marcoarment/FCModel" target="_blank" rel="noopener"><code>FCModel</code></a> 的包裹 .</p>
 </blockquote>
 <blockquote>
 <p>MQCustom :  一些自定义的类和功能 , 依赖或者基于一些其它的第三方 .</p>
 </blockquote>
 </blockquote>
+<h3 id="设计思路"><a href="#设计思路" class="headerlink" title="设计思路"></a>设计思路</h3><p>最核心的设计思路是 <strong><code>无侵入性</code></strong> , 即为 , <strong>不通过任何动态方式 , 更改与原生有关的 API . (没有方法替换 , 没有路径更改等 … )</strong> , 旨在以原生为基础 , 在其之上通过各种 <strong><code>非侵入</code></strong> 方式实现便利操作 .</p>
 <h3 id="上新"><a href="#上新" class="headerlink" title="上新 ?"></a>上新 ?</h3><p>请移步 <a href="https://varbiter.github.io/2019/02/22/MQExtensionKit_ChangeLog_CN/" target="_blank" rel="noopener"><code>ChangeLog</code></a> .</p>
 <h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p>若想运行示例, 克隆 repo,  在工程文件夹内先运行 <code>pod install</code> .</p>
 <h3 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h3><p>已经在 pod spec 中完成了.</p>
@@ -1378,7 +1379,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-22 14:21:04" itemprop="dateModified" datetime="2019-02-22T14:21:04+08:00">2019-02-22</time>
+                <time title="Modified: 2019-03-07 16:07:20" itemprop="dateModified" datetime="2019-03-07T16:07:20+08:00">2019-03-07</time>
               
             
           </span>
@@ -1449,7 +1450,7 @@
 <p>therefore , be ware when submit your app to App Store .</p>
 </blockquote>
 <h3 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h3><blockquote>
-<p>when install , default is <code>MQCore</code> , <code>MQCore</code> contains </p>
+<p>when install , default is <code>MQCore</code> , <code>MQCore</code> contains</p>
 <blockquote>
 <p><code>MQCommon</code> (Macros) , <code>MQProtocol</code> (Protocol) , <code>MQData</code> (NS Family), <code>MQView</code> (UI Family) .</p>
 </blockquote>
@@ -1491,6 +1492,7 @@
 <p>MQCustom :  Custom classes or functions , dependend or based on other vendors .</p>
 </blockquote>
 </blockquote>
+<h3 id="Design-instruction"><a href="#Design-instruction" class="headerlink" title="Design instruction"></a>Design instruction</h3><p>The most important was <strong><code>non-invade</code></strong> , which is , <strong><code>Can&#39;t change any original API through any DYNAMIC operates . (no method swizz (implement swap) , no search-path changed)</code></strong> , Make it based on the original APIs , and through <strong><code>non-invade</code></strong> ways to achieved convenient functions .</p>
 <h3 id="What’s-new"><a href="#What’s-new" class="headerlink" title="What’s new ?"></a>What’s new ?</h3><p>See <a href="https://varbiter.github.io/2019/02/22/MQExtensionKit_ChangeLog_EN/" target="_blank" rel="noopener"><code>ChangeLog</code></a> .</p>
 <h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>To run the example project, clone the repo, and run <code>pod install</code> from the Example directory first.</p>
 <h3 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h3><p>Already done in pod spec.</p>
